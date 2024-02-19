@@ -11,16 +11,23 @@ const TodoWrapper = () => {
       ...todos,
       { id: uuidv4(), task: todo, completed: false, isEditing: false },
     ]);
-    console.log(todos); // Der Zustand wird asynchron aktualisiert, daher wird der aktualisierte Zustand nicht sofort hier verfügbar sein
+  };
+
+  const toggleComplete = (id) => {
+    setTodos(
+      todos.map((todo) =>
+        todo.id === id ? { ...todo, completed: !todo.completed } : todo
+      )
+    );
   };
 
   return (
     <div className="TodoWrapper">
+      <h1>hast du nichts zu tun?</h1>
       <TodoForm addTodo={addTodo} />
-      {todos.map((todo, index) => (
-        <Todo task={todo} key={index} />
+      {todos.map((todo) => (
+        <Todo task={todo} key={todo.id} toggleComplete={toggleComplete} />
       ))}
-      <Todo />
     </div>
   );
 };

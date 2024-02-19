@@ -14,12 +14,12 @@ const TodoForm = ({ addTodo }) => {
       <input
         type="text"
         className="todo-input"
-        placeholder="Wie lautet die Aufgabe?"
+        placeholder="wie lautet die heutige aufgabe?"
         value={value} // Wert des Eingabefelds auf den aktuellen Zustand setzen
         onChange={(e) => setValue(e.target.value)} // Aktualisieren des Zustands bei Änderungen
       />
       <button type="submit" className="todo-btn">
-        Aufgabe hinzufügen!
+        aufgabe hinzufügen!
       </button>
     </form>
   );
