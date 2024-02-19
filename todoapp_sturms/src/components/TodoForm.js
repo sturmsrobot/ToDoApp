@@ -18,7 +18,7 @@ const TodoForm = ({ addTodo }) => {
         onChange={(e) => setValue(e.target.value)}
       />
       <button type="submit" className="todo-btn">
-        ufgabe hinzufügen!
+        aufgabe hinzufügen!
       </button>
     </form>
   );
