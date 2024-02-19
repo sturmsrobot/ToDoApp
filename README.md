@@ -28,7 +28,7 @@ Jede Todo-Komponente zeigt den Inhalt einer einzelnen Todo sowie Symbole für Be
 
 
 **7. Funktionalität zum Bearbeiten von Todos:**
--Ich möchte noch eine Bearbeitungsfunktion implementieren, die es dem Benutzer ermöglicht, den Text einer Todo zu bearbeiten.
+-Ich habe eine Bearbeitungsfunktion implementiert, die es dem Benutzer ermöglicht, den Text einer Todo zu bearbeiten.
 
 **8. Visualisierung der Todo-Liste:**
 
