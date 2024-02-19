@@ -21,12 +21,30 @@ const TodoWrapper = () => {
     );
   };
 
+  const deleteTodo = (id) => {
+    setTodos(todos.filter((todo) => todo.id !== id));
+  };
+
+  const editTodo = (id, updatedTask) => {
+    setTodos(
+      todos.map((todo) =>
+        todo.id === id ? { ...todo, task: updatedTask, isEditing: false } : todo
+      )
+    );
+  };
+
   return (
     <div className="TodoWrapper">
       <h1>hast du nichts zu tun?</h1>
       <TodoForm addTodo={addTodo} />
       {todos.map((todo) => (
-        <Todo task={todo} key={todo.id} toggleComplete={toggleComplete} />
+        <Todo
+          task={todo}
+          key={todo.id}
+          toggleComplete={toggleComplete}
+          deleteTodo={deleteTodo}
+          editTodo={editTodo}
+        />
       ))}
     </div>
   );
