@@ -43,10 +43,8 @@ const Todo = ({ task, toggleComplete, deleteTodo }) => {
           onKeyDown={handleKeyDown}
           onBlur={handleSaveEdit}
           autoFocus
-          style={{
-            backgroundColor: "#8758ff",
-            borderColor: "#8758ff",
-          }}
+          className="todo-input"
+          style={{ padding: 5, margin: 0 }}
         />
       ) : (
         <p
