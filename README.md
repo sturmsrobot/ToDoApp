@@ -42,3 +42,23 @@ Ich habe meine Todo-Liste mit CSS gestaltet, um ein ansprechendes Erscheinungsbi
 **9. Fehlerbehandlung:**
 
 - Ich habe begonnen, Fehler zu behandeln, wie z.B. den Fehler "TypeError: task is undefined", indem ich eine Überprüfung in der Todo.js-Komponente implementiert habe, um sicherzustellen, dass task definiert ist, bevor ich darauf zugreife.
+
+
+## Mittwoch, 15. Mai 2024:
+
+# Welche Tickets wurden heute bearbeitet?/Was wurde gemacht?
+- {REACT: Backend-Integration mit Axios
+#15}
+  -> `axios` installieren und verwenden, um API-Aufrufe an das Backend zu machen
+- {REACT: API-Aufrufe für CRUD-Operationen integrieren
+#16}
+  -> Anpassung der `TodoWrapper.js`, um API-Aufrufe für die CRUD-Operationen hinzufügen, ohne den Import von uuid und dessen Verwendung zu entfernen.
+
+### Zusammenfassung der App-Komponenten:
+
+- `TodoList.js`: Diese Komponente verwaltet die ToDos und verwendet die API, um ToDo-Elemente zu laden, hinzuzufügen, zu aktualisieren und zu löschen.
+- `TodoForm.js`: Formular zum Hinzufügen neuer ToDos.
+- `EditTodoForm.js`: Formular zum Bearbeiten bestehender ToDos.
+- `Todo.js`: Komponente zum Anzeigen eines einzelnen ToDo-Elements mit Optionen zum Bearbeiten und Löschen.
+- `App.js`: Die Hauptkomponente der App, die TodoList rendert.
+- `index.js`: Der Einstiegspunkt der React-App.
